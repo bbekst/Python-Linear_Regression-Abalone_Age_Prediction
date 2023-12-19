@@ -19,7 +19,6 @@ df.insert(0, "Bias", 1)
 df = df[['Bias', 'Length', 'Diameter', 'Height', 'Whole_weight', 'Shucked_weight', 'Viscera_weight', 'Shell_weight', 'Rings']]
 
 #manually split data into training & testing sets
-np.random.seed(42)  #for reproducibility
 train_size = int(0.8 * len(df))
 train_dataset = df[:train_size]
 test_dataset = df[train_size:]
